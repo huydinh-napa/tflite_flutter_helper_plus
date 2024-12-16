@@ -26,7 +26,7 @@ class ResizeWithCropOrPadOp implements ImageOperator {
   ResizeWithCropOrPadOp(this._targetHeight, this._targetWidth,
       [this._cropLeft, this._cropTop])
       // : _output = Image(width:_targetWidth, height:_targetHeight);
-      : _output = Image(_targetWidth, _targetHeight);
+      : _output = Image(width: _targetWidth, height: _targetHeight);
 
   /// Applies the defined resizing with cropping or/and padding on [image] and returns the
   /// result.

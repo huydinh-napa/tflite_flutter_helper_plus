@@ -49,8 +49,8 @@ class TensorImage {
         (fixedImage.width - min(fixedImage.width, fixedImage.height)) ~/ 2;
     int offsetY =
         (fixedImage.height - min(fixedImage.width, fixedImage.height)) ~/ 2;
-    Image destImage =
-        copyCrop(fixedImage, offsetX, offsetY, cropSize, cropSize);
+    Image destImage = copyCrop(fixedImage,
+        x: offsetX, y: offsetY, width: cropSize, height: cropSize);
 
     TensorImage tensorImage = TensorImage();
     tensorImage.loadImage(destImage);
