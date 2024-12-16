@@ -52,7 +52,7 @@ class ImageConversions {
         width: grayscale.getWidth(shape),
         height: grayscale.getHeight(shape),
         bytes: uint8Buffer.getBuffer(),
-        format: Format.uint8,
+        format: Format.float32,
     );
 
     return image;
